@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns="http://www.example.org/menu" 
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="http://www.example.org/menu menu.xsd">
+	
+	<type id="coldSnacks">
+		<food id="1">
+			<link>Ссылка на фото</link>
+			<name>Ассорти рыбное</name>
+			<aboutFood>
+				<descriptionAndPrice>
+					<description>Слабосоленая форель, семга</description>
+					<price></price>
+				</descriptionAndPrice>
+			</aboutFood>
+			<weightOrCount>
+				<weight>100</weight>
+                <weight>20</weight>
+                <weight>15</weight>
+			</weightOrCount>
+		</food>
+		<food id="2">
+			<link>Ссылка на фото</link>
+			<name>Куриный рулет</name>
+			<aboutFood>
+				<descriptionAndPrice>
+					<description>Куриный рулет собственного производства</description>
+					<price></price>
+				</descriptionAndPrice>
+			</aboutFood>
+			<weightOrCount>
+				<weight>100</weight>
+                <weight>5</weight>
+			</weightOrCount>
+		</food>
+		<food id="3">
+			<link>Ссылка на фото</link>
+			<name>Ассорти баклажаны</name>
+			<aboutFood>
+				<descriptionAndPrice>
+					<description>Жареные баклажаны с помидорами</description>
+					<price></price>
+				</descriptionAndPrice>
+				<descriptionAndPrice>
+					<description>Жареные баклажаны с чесноком</description>
+					<price></price>
+				</descriptionAndPrice>
+				<descriptionAndPrice>
+					<description>Жареные баклажаны с орехами</description>
+					<price></price>
+				</descriptionAndPrice>
+			</aboutFood>
+			<weightOrCount>
+				<weight>100</weight>
+                <weight>20</weight>
+                <weight>15</weight>
+			</weightOrCount>
+		</food>
+	</type>
+	<type id="hotSnacks">
+		<food id="1">
+			<link>Ссылка на фото</link>
+			<name>Лобио с шампиньонами</name>
+			<aboutFood>
+				<descriptionAndPrice>
+					<description>Фасоль с шампиньонами и грецким орехом</description>
+					<price>105</price>
+				</descriptionAndPrice>
+			</aboutFood>
+			<weightOrCount>
+				<weight>150</weight>
+                <weight>5</weight>
+			</weightOrCount>
+		</food>
+		<food id="2">
+			<link>Ссылка на фото</link>
+			<name>Жульен</name>
+			<aboutFood>
+				<descriptionAndPrice>
+					<description>Жульен с курицей</description>
+					<price>145</price>
+				</descriptionAndPrice>
+				<descriptionAndPrice>
+					<description>Жульен с грибами</description>
+					<price>155</price>
+				</descriptionAndPrice>
+			</aboutFood>
+			<weightOrCount>
+				<weight>120</weight>
+                <weight>1</weight>
+			</weightOrCount>
+		</food>
+		<food id="3">
+			<link>Ссылка на фото</link>
+			<name>Ахтамар мясной</name>
+			<aboutFood>
+				<descriptionAndPrice>
+					<description>Колбаса, ветчина, буженина, сыр, запеченные на мангале в лаваше</description>
+					<price>165</price>
+				</descriptionAndPrice>
+			</aboutFood>
+			<weightOrCount>
+				<count>1</count>
+			</weightOrCount>
+		</food>
+	</type>
+	<type id="breakfasts">
+		<food id="1">
+			<link>Ссылка на фото</link>
+			<name>Глазунья</name>
+			<aboutFood>
+				<descriptionAndPrice>
+					<description>2 яйца(на выбор: ветчина, сыр, помидоры)</description>
+					<price></price>
+				</descriptionAndPrice>
+			</aboutFood>
+			<weightOrCount>
+				<weight>150</weight>
+			</weightOrCount>
+		</food>
+		<food id="2">
+			<link>Ссылка на фото</link>
+			<name>Омлет</name>
+			<aboutFood>
+				<descriptionAndPrice>
+					<description></description>
+					<price></price>
+				</descriptionAndPrice>
+			</aboutFood>
+			<weightOrCount>
+				<weight>100</weight>
+			</weightOrCount>
+		</food>
+		<food id="3">
+			<link>Ссылка на фото</link>
+			<name>Блинчики с мясом</name>
+			<aboutFood>
+				<descriptionAndPrice>
+					<description>Жареные блинчики с мясом</description>
+					<price></price>
+				</descriptionAndPrice>
+			</aboutFood>
+			<weightOrCount>
+				<weight>150</weight>
+			</weightOrCount>
+		</food>
+	</type>
+</menu>

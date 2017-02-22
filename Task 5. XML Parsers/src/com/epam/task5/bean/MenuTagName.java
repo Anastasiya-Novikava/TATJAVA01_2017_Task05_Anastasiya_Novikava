@@ -1,0 +1,5 @@
+package com.epam.task5.bean;
+
+public enum MenuTagName {
+	MENU, TYPE, FOOD, LINK, NAME, ABOUTFOOD, DESCRIPTIONANDPRICE, DESCRIPTION, PRICE, WEIGHTORCOUNT, WEIGHT, COUNT;
+}

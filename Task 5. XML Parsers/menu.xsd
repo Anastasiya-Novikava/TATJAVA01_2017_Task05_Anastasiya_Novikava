@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.epam.com/menu"
+        xmlns:ns="http://www.epam.com/menu"
+		elementFormDefault="qualified">
+		
+    <element name="menu">
+		<complexType>
+			<sequence>
+				<element name="type" type="tns:Type" minOccurs="1"  maxOccurs="12" />
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="Type">
+		<sequence>
+			<element name="food" type="tns:Food" minOccurs="1"  maxOccurs="unbounded" />
+		</sequence>
+		<attribute name="id">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="coldSnacks"/>
+					<enumeration value="hotSnacks"/>
+					<enumeration value="breakfast"/>
+					<enumeration value="salads"/>
+					<enumeration value="soups"/>
+					<enumeration value="fishDishes"/>
+					<enumeration value="meatDishes"/>
+					<enumeration value="garnishes"/>
+					<enumeration value="grillDishes"/>
+					<enumeration value="fromChef"/>
+					<enumeration value="supplement"/>
+					<enumeration value="desert"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<complexType name="Food">
+		<sequence>
+			<element name="link" type="string" />
+			<element name="name" type="string" />
+			<element name="aboutFood" type="tns:aboutFood" />
+			<element name="descriptionAndPrice" type="tns:DescriptionAndPrice" />
+			<element name="weightOrCount" type="tns:weightOrCount" />
+		</sequence>
+		<attribute name="id" type="ID" use="required" />
+	</complexType>
+	<complexType name="aboutFood">
+        <sequence>
+            <element name="descriptionAndPrice" type="descriptionAndPrice" />
+        </sequence>
+    </complexType>
+	<complexType name="descriptionAndPrice">
+        <sequence>
+            <element name="description" type="string" minOccurs="1" maxOccurs="unbounded" />
+			<element name="price" />
+				<simpleType>
+					<restriction base="string">
+						<pattern value="[\d]+.?[\d]*" />
+					</restriction>
+				</simpleType>
+        </sequence>
+    </complexType>
+	<complexType name="weightOrCount">
+        <choice>
+            <element name="weight" type="integer" minOccurs="1" maxOccurs="unbounded"/>
+            <element name="count" type="integer" minOccurs="1" maxOccurs="unbounded"/>
+        </choice>
+    </complexType>
+</schema>
